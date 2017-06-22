@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Skeleton: Responsive CSS Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="css/github-prettify-theme.css">
+    <script src="js/site.js"></script>
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body class="code-snippets-visible">
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+    <section class="header">
+        <h2 class="title">Skeleton Handleiding.</h2>
+        <a class="button button-primary" href="https://github.com/dhg/Skeleton/releases/download/2.0.4/Skeleton-2.0.4.zip" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">Download</a>
+        <div class="value-props row">
+            <div class="four columns value-prop">
+                <a href="voordelen.html">
+                <img class="value-img" src="images/plus.png">
+                </a>
+                Voordelen van Skeleton
+            </div>
+                <div class="four columns value-prop">
+                    <a href="index.html">
+                    <img class="value-img" src="images/return.png">
+                        </a>
+                    Terug
+                </div>
+            <div class="four columns value-prop">
+                <a href="nadelen.html">
+                <img class="value-img" src="images/min.png">
+                </a>
+                Nadelen van Skeleton
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why use Skeleton -->
+    <div class="docs-section" id="intro">
+        <h6 class="docs-header">Is Skeleton wat voor jou?</h6>
+        <p>Skeleton is handig voor jou als je een kleinschalig project wil opzetten, zonder de rompslomp van grotere frameworks. Skeleton heeft een handje vol aan standaard HTML elementen en kan een grid implementeren, maar dat is vaak al genoeg om mee te beginnen. Eigenlijk <u>is deze website gebouwd met Skeleton en heeft maar ~200 regels CSS</u> </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="docs-section" id="grid">
+        <h6 class="docs-header">De grid</h6>
+        <p>
+            De grid is een <u>12-kolom "vloeibare" grid met een maximum breedte van 960px</u>, die zich automatisch aanpast aan de breedte van je browser scherm. De maximaal breedte kan aangepast worden met één regel CSS en alle kolommen worden aangepast. De syntax is eenvoudig en maakt het responsive maken simpel. Probeer maar je browser aan te passen.
+        </p>
+        <div class="example-grid docs-example">
+            <div class="row">
+                <div class="one column">Een</div>
+                <div class="eleven columns">Elf</div>
+            </div>
+            <div class="row">
+                <div class="two columns">Twee</div>
+                <div class="ten columns">Tien</div>
+            </div>
+            <div class="row">
+                <div class="three columns">Drie</div>
+                <div class="nine columns">Negen</div>
+            </div>
+            <div class="row">
+                <div class="four columns">Vier</div>
+                <div class="eight columns">Acht</div>
+            </div>
+            <div class="row">
+                <div class="five columns">Vijf</div>
+                <div class="seven columns">Zeven</div>
+            </div>
+            <div class="row">
+                <div class="six columns">Zes</div>
+                <div class="six columns">Zes</div>
+            </div>
+            <div class="row">
+                <div class="seven columns">Zeven</div>
+                <div class="five columns">Vijf</div>
+            </div>
+            <div class="row">
+                <div class="eight columns">Acht</div>
+                <div class="four  columns">Vier</div>
+            </div>
+            <div class="row">
+                <div class="nine columns">Negen</div>
+                <div class="three columns">Drie</div>
+            </div>
+            <div class="row">
+                <div class="ten columns">Tien</div>
+                <div class="two columns">Twee</div>
+            </div>
+            <div class="row">
+                <div class="eleven columns">Elf</div>
+                <div class="one column">Een</div>
+            </div>
+        </div>
+
+
+        <!--&lt;!&ndash; CODE EXAMPLE ———————————————————————————————————————— &ndash;&gt;-->
+        <!--<pre class="code-example">-->
+<!--<code class="code-example-body prettyprint">&lt;!&ndash; .container is main centered wrapper &ndash;&gt;-->
+
+<!--<div class="container">-->
+
+  <!--&lt;!&ndash; columns should be the immediate child of a .row &ndash;&gt;-->
+  <!--<div class="row">-->
+    <!--<div class="one column">One</div>-->
+    <!--<div class="eleven columns">Eleven</div>-->
+  <!--</div>-->
+
+    <!--&lt;!&ndash; just use a number and class 'column' or 'columns' &ndash;&gt;-->
+  <!--<div class="row">-->
+    <!--<div class="two columns">Two</div>-->
+    <!--<div class="ten columns">Ten</div>-->
+  <!--</div>-->
+
+    <!--&lt;!&ndash; there are a few shorthand columns widths as well &ndash;&gt;-->
+  <!--<div class="row">-->
+    <!--<div class="one-third column">1/3</div>-->
+    <!--<div class="two-thirds column">2/3</div>-->
+  <!--</div>-->
+  <!--<div class="row">-->
+    <!--<div class="one-half column">1/2</div>-->
+    <!--<div class="one-half column">1/2</div>-->
+  <!--</div>-->
+
+<!--</div>-->
+
+    <!--&lt;!&ndash; Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) &ndash;&gt;-->
+<!--</code>-->
+<!--</pre>-->
+        <!--&lt;!&ndash; ————————————————————————————————————————————————————— &ndash;&gt;-->
+
+    </div>
+
+    <!-- Typography -->
+    <div class="docs-section" id="typography">
+        <h6 class="docs-header">Typography</h6>
+        <p>Alles wordt gecodeerd met <code>rems</code>, dus lettertype grote kan responsively veranderd worden met een enkele <code>&lt;html&gt;</code> lettertype grote eigenschap. Out of the box, Skeleton veranderd nooit de <code>&lt;html&gt;</code> font-size, maar het is mogelijk als je het nodig hebt met je project. Alle afmetingen zijn standaard 10 dus, een <code>&lt;h1&gt;</code> met <code>5.0rem</code>font-size betekent <code>50px</code>.</p>
+        <div class="docs-example">
+            <div class="row">
+                <div class="six columns">
+                    <p><strong>De typography basis</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> van Google, met 15rem (15px) met een 1.6 line height (24px). Andere mogelijkheden zoals <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em> en <u>underline</u> zijn natuurlijk toegevoegd.</p>
+                    <p><strong>Headings</strong> heeft een family van verschillende groottes en andere <code>letter-spacing</code>, <code>line-height</code> en <code>margins</code>.</p>
+                </div>
+                <div class="six columns">
+                    <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+                    <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+                    <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+                    <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+                    <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+                    <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Verder -->
+        <div class="docs-section">
+            <h6 class="docs-header">Verder</h6>
+
+            <p>Voor meer informatie ga naar: <u><a href="http://www.getskeleton.com">Skeleton</a></u></p>
+        </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
